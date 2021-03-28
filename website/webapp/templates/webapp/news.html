@@ -1,0 +1,13 @@
+{% extends 'webapp/base.html' %}
+{% block title %}News{% endblock title %}
+
+{% block body %}
+<h3>News Lists</h2>
+{% for adata in data %}
+<h5> Author : {{ adata.author }}</h5>
+<h6> Title : {{ adata.title }}</h5>
+<h6> Description : {{ adata.description }}</h5>
+<br>
+{% endfor %}
+
+{% endblock body %}
